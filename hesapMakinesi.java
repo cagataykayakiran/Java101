@@ -23,13 +23,17 @@ public class Test {
                 System.out.println("Sonucunuz:" + (sayi1 * sayi2));
                 break;
             case 4:
-                System.out.println("Sonucunuz:" + (sayi1 / sayi2));
-                break;
-            default:
-                System.out.println("hatalı işlem...");
-                break;
-        }
+                if (sayi1 == 0 || sayi2 == 0) {
+                    System.out.println("sıfıra bölünemez...");
+                }
+                else {
+                    System.out.println("Sonucunuz:" + (sayi1 / sayi2));
+                }
+                    break;
+                    default:
+                        System.out.println("hatalı işlem...");
+                        break;
 
+            }
         }
     }
-
